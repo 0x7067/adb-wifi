@@ -21,3 +21,4 @@ port=5555
 
 adb tcpip $port
 adb connect $device_internal_ip
+adb -s $device_internal_ip:$port shell settings put system show_touches 1
